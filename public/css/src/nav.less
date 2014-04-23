@@ -1,0 +1,98 @@
+.nav {
+  padding-top: 3em;
+  padding-bottom: 2em;
+  &:extend(.clearfix all);
+}
+
+// nav icon
+.nav-header {
+  // border-bottom: 1px solid #161616;
+  float: left;
+
+  a {
+    float: left;
+    background-image: url('/img/tamid-logo.png');
+    background-repeat: no-repeat;
+    padding-right: 15px;
+    height: 44px;
+    width: 259px;
+  }
+
+  .mobile-nav-icon {
+    background-color: transparent;
+    float: right;
+    padding: 15px;
+    margin-top: 5.5px;
+    display: none;
+
+    .mobile-icon-bar {
+      display: block;
+      height: 2px;
+      width: 22px;
+      background-color: @black;
+
+      &:not(:last-child) {
+        margin-bottom: 4px;
+      }
+    }
+  }
+}
+
+.navbar {
+	float: right;
+	padding-left: 0;
+  list-style: none;
+  font-size: 1.2em;
+  font-weight: 300;
+
+	> li {
+		float: left;
+		// .box-sizing();
+
+		> a {
+			display: block;
+			line-height: 20px;
+			padding: 9.5px 27.5px;
+			color: @light-brown;
+      text-transform: capitalize;
+
+			&:hover, &.active {
+				// color: @light-grey-text;
+			}
+
+			// @media screen and (max-width: 1000px) {
+			// 	padding: 17.5px 20px;
+			// }
+		}
+
+		&:last-child {
+			> a {
+				padding-right: 0;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: @screen-md) {
+  .navbar > li > a {
+    padding: 9.5px 13.5px;
+  }
+}
+
+@media screen and (max-width: @screen-sm) {
+  .nav {
+    padding-top: 1em;
+  }
+
+  .nav-header {
+    width: 100%;
+
+    .mobile-nav-icon {
+      display: block;
+    }
+  }
+
+  .navbar {
+    display: none;
+  }
+}

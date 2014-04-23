@@ -1,0 +1,67 @@
+body, input {
+	font-family: 'Roboto', sans-serif;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+input, textarea, select {
+	margin: 0;
+	border: 1px solid @light-grey;
+	height: @input-height;
+	font-size: 1.4em;
+	font-weight: 300;
+
+	&.error {
+		color: @error !important;
+
+		.placeholder(@error);
+	}
+
+	&.error-border { border: 1px solid @error; }
+}
+
+/* Button */
+button, .button {
+	position: relative;
+	border: none;
+	color: #fff;
+	background-color: @light-brown;
+	// height: @input-height;
+	font-size: 1.2em;
+	padding-top: .77em;
+	padding-bottom: .77em;
+
+	&:hover {
+		// background-color: @light-blue;
+	}
+}
+
+p {
+  font-weight: 300;
+}
+
+.clearfix {
+	.clearfix();
+}
+
+.title {
+  text-align: center;
+  color: @blue;
+  font-size: 2.5em;
+}
+
+.desc {
+  font-size: 1.5em;
+}
+
+.sign-up {
+  padding-bottom: 2em;
+  border-bottom: 1px solid @light-beige;
+}

@@ -1,0 +1,33 @@
+{{> hero}}
+
+<section class="light-beige clearfix">
+  <div class="container">
+    <div class="row">
+      <h2 class="title col-md-12">{{data.missionTitle}}</h2>
+      <p class="desc col-md-12">{{data.missionText}}</p>
+    </div>
+  </div>
+</section>
+
+{{#each data.group}}
+  {{#if this.indx }}
+    <section class="light-beige clearfix">
+  {{else}}
+    <section class="clearfix">
+  {{/if}}
+    <div class="container">
+      <div class="row">
+        <h2 class="title col-md-12">{{this.title}}</h2>
+        {{#if this.indx }}
+          <p class="desc col-xs-12 col-sm-7 col-md-7">{{this.desc}}</p>
+          <div class="col-xs-12 col-sm-5 col-md-5"><p>Placer</p></div>
+        {{else}}
+          <div class="col-xs-12 col-sm-5 col-md-5"><p>placer</p></div>
+          <p class="desc col-xs-12 col-sm-7 col-md-7">{{this.desc}}</p>
+        {{/if}}
+      </div>
+    </div>
+  </section>
+{{/each}}
+
+{{> signup}}

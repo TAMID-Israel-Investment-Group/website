@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+  <title>{{title}}</title>
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+
+	{{! view port for iphone }}
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <link rel="stylesheet" href="/css/bin/style.css">
+
+
+</head>
+<body>
+  <header>
+    <nav class="container nav" role="navigation">
+      <div class="nav-header">
+        <a class="icon" href="/"></a>
+        <button class="mobile-nav-icon hidden-nav-mobile" type="button">
+          <span class="mobile-icon-bar"></span>
+          <span class="mobile-icon-bar"></span>
+          <span class="mobile-icon-bar"></span>
+        </button>
+      </div>
+      <ul class="navbar">
+        <li><a href="#education">education</a></li>
+        <li><a href="#consulting">consulting</a></li>
+        <li><a href="#fellowship">fellowship</a></li>
+        <li><a href="#fund">fund</a></li>
+        <li><a href="#signup">signup</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    {{{body}}}
+  </main>
+
+  <footer class="container footer clearfix">
+    <ul class="row social-icons">
+      <li class="col-xs-12 col-sm-4 col-md-4"><img src='/img/facebook.png'></li>
+      <li class="col-xs-12 col-sm-4 col-md-4"><img src='/img/twitter.png'></li>
+      <li class="col-xs-12 col-sm-4 col-md-4"><img src='/img/linkedin.png'></li>
+    </ul>
+  </footer>
+</body>
+
+</html>
